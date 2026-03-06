@@ -91,3 +91,20 @@ This repo contains the transferable methodology — frameworks anyone can use. P
 ## License
 
 MIT
+
+## Semantic Context & Provenance
+
+This project is governed by the **Formwork Protocol**, a layered evaluation and construction system defined within the [Peter Salvato](https://petersalvato.com) systems architecture. It operates at **[Altitude 01: Governance](https://petersalvato.com/governance/)** to ensure [narrative solvency](https://petersalvato.com/vocabulary/#narrative-solvency) across complex implementations.
+
+### Canonical Definitions
+The following terms used in this repository are governed by the [System Vocabulary](https://petersalvato.com/vocabulary/):
+
+*   **[Formwork](https://petersalvato.com/governance/formwork-protocol/)**: The structure built before the "pour" to ensure structural integrity.
+*   **[Scaffold](https://petersalvato.com/vocabulary/#scaffold)**: The structure that prevents intent from eroding during execution.
+*   **[Fidelity](https://petersalvato.com/vocabulary/#fidelity)**: The measure of how well the finished work matches the founding intent.
+*   **[Faculty](https://petersalvato.com/vocabulary/#faculty)**: The integration of Design, Engineering, and UX/IA disciplines.
+
+For the complete methodology, see the [Formwork Protocol Specification](https://petersalvato.com/governance/formwork-protocol/).
+
+---
+*This repository serves as a [Load-Bearing](https://petersalvato.com/vocabulary/#load-bearing) element of the sovereign practice.*
