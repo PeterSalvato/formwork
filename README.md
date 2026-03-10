@@ -1,23 +1,32 @@
 # Formwork
 
-A governance system for AI-assisted creative and engineering work. Evaluative lenses extracted from real practitioners' bodies of work, diagnostic tools for copy and structure, and a coordinator architecture that runs them together.
+The accommodation design process for AI-assisted creative and engineering work. Every tool in this repo started with the same question: what does the system actually need to do the job?
 
-**Methodology:** [Formwork Protocol](https://petersalvato.com/governance/formwork-protocol/)
-**Blog series:** [What I Built This Year](https://petersalvato.com/blog/what-i-built-this-year/)
+The theory is [Accommodation Design](https://github.com/PeterSalvato/accommodation-design). Formwork is the process that implements it. In concrete construction, formwork is the temporary structure you pour into. It shapes the work while things are fluid. Once the concrete sets, the form comes off.
+
+**Framework:** [Accommodation Design](https://github.com/PeterSalvato/accommodation-design) (whitepaper)
+**Process:** [Formwork](https://petersalvato.com/governance/formwork-protocol/)
+**Blog:** [What I Built This Year](https://petersalvato.com/essays/what-i-built-this-year/)
 
 ## What this is
 
-These are [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills) — structured prompts that give Claude specific evaluative frameworks to run against your work. Each skill does one thing: takes an input, runs a diagnostic, and returns a verdict with evidence.
+A toolkit of [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills) — structured prompts that accommodate specific processing constraints in AI-assisted work. Each tool addresses a real constraint: context window limits, attention degradation, compound evaluation flattening, voice drift, knowledge loss between sessions.
 
-The skills implement two patterns:
+The tools implement two patterns:
 
-**Atomic skills** are single-purpose. The Millman lens asks five questions about whether a portfolio reveals a real person. The Grip Test rates whether copy lands with a stranger. Each one runs independently and returns a clear result.
+**Atomic skills** are single-purpose. One objective, one output. A lens asks five questions and returns a verdict. A diagnostic checks one dimension and reports pass/fail. This is the accommodation move: instead of giving a model twelve objectives at once (which it flattens into mush), you decompose into single-objective tasks that the model can actually do well.
 
 **Coordinators** dispatch atomic skills in parallel, collect results, and synthesize. The audit coordinator runs baseline checks, then dispatches all configured lenses simultaneously. Each lens evaluates the same material from a different perspective. Where they agree, you have a strong signal. Where they disagree, you have a decision to make.
 
-## What's included
+## The toolkit
 
-### Evaluative Lenses (`skills/lenses/`)
+### Context Preservation
+
+| Tool | Constraint | Solution |
+|------|-----------|----------|
+| **savepoint** | Context disappears between sessions | Structured semantic markers that capture cognitive turning points in the moment they happen |
+
+### Evaluation Lenses
 
 Each lens extracts an evaluative framework from a specific practitioner's body of work. The criteria are testable — they produce verdicts (STRONG / HOLDS / WEAK / BROKEN), not feelings.
 
@@ -37,30 +46,24 @@ Each lens extracts an evaluative framework from a specific practitioner's body o
 | **materialist** | Ando/Kahn/Scarpa/Breuer | Is this built or decorated? Structural honesty |
 | **print-craft** | Print production standards | Does it feel printed? Material qualities of a pressed artifact |
 
-### Diagnostic Tools (`skills/diagnostics/`)
+### Copy and Structure Diagnostics
 
-| Tool | Purpose |
-|------|---------|
-| **grip-test** | Does this copy land with a stranger? Fingernail / Grip / Lock rating |
-| **baseline** | Mechanical health: links, images, cross-refs, voice violations, SEO |
-| **copy-verify** | 12-item pass/fail checklist for published copy |
-| **convergence** | Where do lenses agree and disagree? Maps consensus and contradiction |
-| **speed-tiers** | What registers in 10 seconds, 2 minutes, 20 minutes? |
-| **forwarding** | Would someone send this? Per-page forwardability |
-| **arc** | Cross-page coherence. Does the through-line hold? |
-| **journeys** | Visitor path evaluation. Three paths through the site |
+| Tool | Constraint | Solution |
+|------|-----------|----------|
+| **grip-test** | Can't tell if copy lands until a stranger reads it | Stranger test with Fingernail / Grip / Lock rating |
+| **copy-verify** | Voice drifts without mechanical checks | 13-item pass/fail checklist for published copy |
+| **baseline** | Mechanical health degrades silently | Links, images, cross-refs, voice violations, SEO |
+| **convergence** | Single-lens evaluation misses the picture | Maps where lenses agree and disagree |
+| **speed-tiers** | Different visitors read at different depths | What registers in 10 seconds, 2 minutes, 20 minutes |
+| **forwarding** | Work that isn't remarkable doesn't spread | Per-page forwardability rating |
+| **arc** | Cross-page coherence breaks without tracking | Does the through-line hold across the full site? |
+| **journeys** | The author's path isn't the visitor's path | Three visitor paths evaluated for coherence |
 
-### Coordinators (`skills/coordinators/`)
+### Coordinators
 
 | Coordinator | Purpose |
 |-------------|---------|
-| **audit** | Dispatches baseline + lenses in parallel, synthesizes results |
-
-### Protocols (`skills/protocols/`)
-
-| Protocol | Purpose |
-|----------|---------|
-| **savepoint** | Structured capture of decision moments. Markup for tracking cognitive turning points |
+| **audit** | Dispatches baseline + all lenses in parallel, synthesizes results |
 
 ## How to use
 
@@ -78,11 +81,21 @@ The lenses weren't generated by asking Claude to "act as Vignelli." They were bu
 3. Codifying as testable criteria that produce verdicts against real work
 4. Validating against work the practitioner produced or praised
 
-This is the difference between "act as" (which produces caricature) and extraction (which produces diagnostic tools). The [Persona Extraction](https://petersalvato.com/blog/persona-extraction/) post explains the method in detail.
+This is the difference between "act as" (which produces caricature) and extraction (which produces diagnostic tools). The [Lens Extraction](https://petersalvato.com/essays/lens-extraction/) essay explains the method in detail.
+
+## The accommodation pattern
+
+Every tool in this repo follows the same pattern:
+
+1. **Identify the processing constraint.** What does the model struggle with? (Compound evaluation, voice consistency, context loss, knowledge degradation)
+2. **Design the accommodation.** What does the model need to do the job well? (Decomposed objectives, voice samples, semantic markers, traversal protocols)
+3. **Build the scaffold.** Structure the input so the model's processing profile works for you instead of against you.
+
+This is the same move a special education teacher makes when designing an IEP. You don't fight the student's processing profile. You design the task to meet it. The [whitepaper](https://github.com/PeterSalvato/accommodation-design) documents the full framework.
 
 ## What's not included
 
-This repo contains the transferable methodology — frameworks anyone can use. Personal calibrations (voice governance derived from my conversation patterns, identity-specific lenses, site-specific positioning tools) are private. The methodology transfers. The calibration is mine.
+This repo contains the transferable toolkit — frameworks anyone can apply to their own work. Personal calibrations (voice governance derived from my conversation patterns, identity-specific lenses, site-specific positioning tools) are private. The toolkit transfers. The calibration is yours to build.
 
 ## Author
 
@@ -94,6 +107,6 @@ MIT
 
 ## Context
 
-This is one of three governance protocols published at [petersalvato.com](https://petersalvato.com). The [System Vocabulary](https://petersalvato.com/vocabulary/) defines terms like [formwork](https://petersalvato.com/governance/formwork-protocol/), [drift](https://petersalvato.com/vocabulary/#drift), [scaffold](https://petersalvato.com/vocabulary/#scaffold), and [fidelity](https://petersalvato.com/vocabulary/#fidelity).
+Formwork is the process layer of [Accommodation Design](https://github.com/PeterSalvato/accommodation-design). The [System Vocabulary](https://petersalvato.com/vocabulary/) defines terms like [formwork](https://petersalvato.com/vocabulary/#formwork), [drift](https://petersalvato.com/vocabulary/#drift), [scaffold](https://petersalvato.com/vocabulary/#scaffold), and [accommodation design](https://petersalvato.com/vocabulary/#accommodation-design).
 
 Full methodology: [petersalvato.com/governance/formwork-protocol/](https://petersalvato.com/governance/formwork-protocol/)
