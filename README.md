@@ -26,6 +26,13 @@ The tools implement two patterns:
 |------|-----------|----------|
 | **savepoint** | Context disappears between sessions | Structured semantic markers that capture cognitive turning points in the moment they happen |
 
+### Story and Voice Extraction
+
+| Tool | Constraint | Solution |
+|------|-----------|----------|
+| **interview** | Scripted questions produce performed answers | Context-aware story extraction that loads the maker's full history, finds narrative gaps, and pulls unscripted responses — input inversion applied to the person |
+| **voice-sample** | Published writing is performance, not voice | Samples from conversation transcripts to capture how someone actually talks, not how they write for an audience |
+
 ### Evaluation Lenses
 
 Each lens extracts an evaluative framework from a specific practitioner's body of work. The criteria are testable — they produce verdicts (STRONG / HOLDS / WEAK / BROKEN), not feelings.
