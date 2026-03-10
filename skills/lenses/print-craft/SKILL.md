@@ -1,6 +1,6 @@
 ---
 name: print-craft
-description: "Print Craft lens — Does it feel printed? Scored against the maker's actual print work as the benchmark. Read-only diagnostic."
+description: "Print Craft lens — Does it feel printed? Scored against Peter's actual print work as the benchmark. Read-only diagnostic."
 user_invocable: true
 ---
 
@@ -8,7 +8,7 @@ user_invocable: true
 
 ## Purpose
 
-The print-craft lens evaluates whether the site achieves the material qualities of a printed artifact — not by abstract principles, but by direct comparison to the maker's actual print work. Each question maps to a specific reference image from the visual reference index.
+The print-craft lens evaluates whether the site achieves the material qualities of a printed artifact — not by abstract principles, but by direct comparison to Peter's actual print work. Each question maps to a specific reference image from the visual reference index.
 
 The benchmark isn't "does this look like print" in general. It's "does this achieve the specific character visible in the Stoicism series, New City posters, P mark, and Aetherwright sigil?" Those pieces define what "printed" means for this site.
 
@@ -170,9 +170,9 @@ Print in conversation. No file changes. Format:
 
 ### Verdict Scale
 
-- **PRESSED** — The site embodies print craft at the level of the maker's actual work. Textures match the reference character. Consistency is mechanical. Material quality is felt, not seen. The site doesn't reference print — it is a print artifact rendered on screen.
+- **PRESSED** — The site embodies print craft at the level of Peter's actual work. Textures match the reference character. Consistency is mechanical. Material quality is felt, not seen. The site doesn't reference print — it is a print artifact rendered on screen.
 - **ADEQUATE** — Print-inspired qualities are present but some elements don't match the reference character. Some textures feel applied rather than inherent. Some inconsistencies between pages. Moving in the right direction but not there yet.
-- **DIGITAL** — The site references print culture superficially or not at all. Comparison against the reference images reveals significant gaps. The material character of the maker's actual work is absent. It feels like a website, not a pressed artifact.
+- **DIGITAL** — The site references print culture superficially or not at all. Comparison against the reference images reveals significant gaps. The material character of Peter's actual work is absent. It feels like a website, not a pressed artifact.
 
 ## Direction (if not all passing)
 
@@ -184,7 +184,7 @@ For each non-passing question, state:
 
 ## Limitations
 
-Claude's visual assessment, not expert critique. Useful as structured feedback against specific references, not authoritative judgment. the maker's eye is the final arbiter.
+Claude's visual assessment, not expert critique. Useful as structured feedback against specific references, not authoritative judgment. Peter's eye is the final arbiter.
 
 ## Called By
 

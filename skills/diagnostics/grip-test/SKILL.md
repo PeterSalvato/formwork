@@ -8,7 +8,7 @@ user_invocable: true
 
 ## Purpose
 
-Quick diagnostic: does this copy land with someone who hasn't lived through the problem? Named after a friend named Ben, who said he could only get "a fingernail hold" on Savepoint. That's the standard.
+Quick diagnostic: does this copy land with someone who hasn't lived through the problem? Named after Peter's friend Ben, who said he could only get "a fingernail hold" on Savepoint. That's the standard.
 
 This is a read-only diagnostic. It rates what exists. It doesn't rewrite.
 
@@ -32,7 +32,7 @@ The page body text — specifically the first 2-3 paragraphs (the opening), plus
 
 ### Invoke (as needed)
 - `/knowledge` → search for real moments behind this content → source-attributed results
-- `- Voice sample skill (if available) → speaking patterns → rhythm, vocabulary observations
+- `/voice-sample` → Peter's actual speaking patterns → rhythm, vocabulary observations
 
 ### Lens Criteria (embedded)
 The Stranger Test + Fingernail/Grip/Lock diagnostic below ARE this skill's criteria.
@@ -62,7 +62,7 @@ Name the story the page is currently telling in one sentence. Then name 1-2 alte
 Use the Angle Library for reference (not a formula — a prompt when stuck):
 
 - **The Loss** — opens with what was lost or broken. Works when the project exists because something failed.
-- **The Reflex** — opens with the behavior that existed before the system. Works when the maker was already doing the thing informally.
+- **The Reflex** — opens with the behavior that existed before the system. Works when Peter was already doing the thing informally.
 - **The Gap** — opens with what the stranger already knows vs. what they're missing. Works when the problem is invisible until you name it.
 - **The Craft Detail** — opens with a specific technical fact that reveals depth. Works when the reader is a peer.
 - **The Contradiction** — opens with two things that should work together but don't. Works when the problem is structural.

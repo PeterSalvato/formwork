@@ -27,7 +27,7 @@ Read-only diagnostic. Reports a verdict, never auto-fixes.
 - Screenshots from `.audit/screenshots/` (latest set)
 - `docs/visual-reference-index.md` → active reference set
 - Reference images from active set (for visual context during evaluation)
-- `.audit/rubric.md` if it exists — maker's annotations override defaults
+- `.audit/rubric.md` if it exists — Peter's annotations override defaults
 
 ### Invoke (as needed)
 - `/knowledge` → search ideation history for grounding → source-attributed results
@@ -117,5 +117,5 @@ For each non-passing question, state:
 ## Called By
 
 - `/audit run` — runs in parallel with other lenses
-- `/steward run` — via audit
+- `/full-pass run` — via audit
 - Standalone — usable anytime

@@ -37,7 +37,7 @@ The forwardability criteria below ARE this skill's evaluation framework.
 
 ## Calibration
 
-The positioning strategy is "desirable because interesting and unavailable." Forwarding is the primary distribution mechanism for this strategy. Someone discovers the site, finds something remarkable, and sends it to a specific person with a specific sentence. That sentence IS the positioning — it's how the maker's reputation travels.
+Peter's positioning strategy is "desirable because interesting and unavailable." Forwarding is the primary distribution mechanism for this strategy. Someone discovers the site, finds something remarkable, and sends it to a specific person with a specific sentence. That sentence IS the positioning — it's how Peter's reputation travels.
 
 The forwardable pages don't need to be the "best" pages. They need to be the pages where someone thinks of a specific person and a specific reason to share.
 
@@ -105,5 +105,5 @@ For each page rated PRIVATE that SHOULD be forwardable (based on its strategic r
 
 ## Called By
 
-- `/steward run` — parallel arm (independent, no data dependencies)
+- `/full-pass run` — parallel arm (independent, no data dependencies)
 - Standalone — usable anytime

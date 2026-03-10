@@ -30,7 +30,7 @@ Read-only diagnostic. Reports pass/fail, never auto-fixes.
 - Screenshots from `.audit/screenshots/` (latest set)
 - `docs/visual-reference-index.md` → active reference set
 - Reference images from active set (for visual context during evaluation)
-- `.audit/rubric.md` if it exists — maker's annotations override defaults
+- `.audit/rubric.md` if it exists — Peter's annotations override defaults
 
 ### Invoke (as needed)
 N/A — this IS the mechanical check. Other skills invoke this one.
@@ -63,7 +63,7 @@ The evaluation questions below ARE this lens's criteria.
 ### 1.4 Attribution Chain
 
 - For each spoke repo (has CNAME), check:
-  - `index.html` exists with JSON-LD containing `creator` pointing to `the-hub-site`
+  - `index.html` exists with JSON-LD containing `creator` pointing to `petersalvato.com`
   - `README.md` links back to hub
 - On the hub, check `_includes/head.html`:
   - Person schema `sameAs` array lists ONLY domains that are actually live (not parked)

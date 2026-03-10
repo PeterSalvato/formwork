@@ -61,7 +61,7 @@ Every savepoint uses this exact format:
 
 | Field | Values |
 |-------|--------|
-| `project` | Project scope: `homelab`, `the-hub-site`, `joinery`, `savepoint`, `aetherwright`, or any project name. Blank by default. Enables filtering savepoints by project. |
+| `project` | Project scope: `homelab`, `petersalvato.com`, `joinery`, `savepoint`, `aetherwright`, or any project name. Blank by default. Enables filtering savepoints by project. |
 | `keywords` | Comma-separated search terms. Blank by default. Free-form — whatever terms would help you find this savepoint later. |
 | `importance` | `high`, `medium`, `low` |
 | `confidence` | `strong`, `moderate`, `provisional` |
@@ -87,7 +87,7 @@ Record a new savepoint.
    - Contains "realized" / "insight" / "pattern" → `insight`
    - Default → `system_logic`
 4. **Function:** Default to `declaration`. If content suggests drift, use `drift_detected`. If it references changing a previous decision, use `revision`.
-5. **Project:** Infer from conversation context. If working in the-hub-site, set `project:the-hub-site`. If working in homelab, set `project:homelab`. If unclear, leave blank.
+5. **Project:** Infer from conversation context. If working in petersalvato.com, set `project:petersalvato.com`. If working in homelab, set `project:homelab`. If unclear, leave blank.
 6. **Keywords:** Extract 2-4 key terms from the content that would help find this savepoint later. Leave blank if the content and category are sufficient.
 7. **Output:** Print the savepoint directly in the conversation using the v3.1 syntax. Do NOT write to disk.
 
@@ -120,7 +120,7 @@ Search across savepoints in conversation history.
    - Claude.ai exports: `grep` across `~/homelab/knowledge/exports/consolidated_exports/consolidated_clean/claude_ai_*.md`
    - Gemini exports: `grep` across `~/homelab/knowledge/exports/consolidated_exports/consolidated_clean/gemini_all.md`
 2. **Match against:** The `<Savepoint` tag, `#` content line, `project:` field, and `keywords:` field
-3. **Filtering:** If query matches a known project name (e.g., "homelab", "joinery", "the-hub-site"), filter by `project:` field first, then search content. Otherwise search all fields.
+3. **Filtering:** If query matches a known project name (e.g., "homelab", "joinery", "petersalvato.com"), filter by `project:` field first, then search content. Otherwise search all fields.
 4. **Display results** sorted by timestamp (most recent first), limited to 10:
    - Timestamp
    - Project (if set)

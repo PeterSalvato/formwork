@@ -119,5 +119,5 @@ For missing transition hooks:
 
 ## Called By
 
-- `/steward run` — parallel arm (independent, no data dependencies)
+- `/full-pass run` — parallel arm (independent, no data dependencies)
 - Standalone — usable anytime

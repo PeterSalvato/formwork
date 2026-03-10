@@ -66,7 +66,7 @@ The curious person's path. They liked what they saw and want to understand how t
 
 **Route:** Homepage → Bio → Encore (flagship) → Formwork (methodology) → Thinking
 
-The professional's path. They're evaluating whether the maker is someone they want to work with. They need evidence, not vibes.
+The professional's path. They're evaluating whether Peter is someone they want to work with. They need evidence, not vibes.
 
 **Check at each transition:**
 - Does the Bio establish credibility quickly?
@@ -123,5 +123,5 @@ For each DISJOINTED or COHERENT journey:
 
 ## Called By
 
-- `/steward run` — parallel arm (independent, no data dependencies)
+- `/full-pass run` — parallel arm (independent, no data dependencies)
 - Standalone — usable anytime

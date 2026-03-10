@@ -28,7 +28,7 @@ Read-only diagnostic. Reports a verdict, never auto-fixes.
 - Screenshots from `.audit/screenshots/` (latest set)
 - `docs/visual-reference-index.md` → active reference set
 - Reference images from active set (for visual context during evaluation)
-- `.audit/rubric.md` if it exists — maker's annotations override defaults
+- `.audit/rubric.md` if it exists — Peter's annotations override defaults
 
 ### Invoke (as needed)
 - `/knowledge` → search ideation history for grounding → source-attributed results
@@ -61,7 +61,7 @@ Flag: Pages that jump to the solution. Missing context/drift.
 ### B3. Does this show curiosity beyond design?
 
 Read: all project pages
-Evaluate: Evidence that the maker engaged deeply with each project's actual domain (jewelry, recruiting, music, narrative, household systems) rather than applying a visual style to interchangeable subjects.
+Evaluate: Evidence that Peter engaged deeply with each project's actual domain (jewelry, recruiting, music, narrative, household systems) rather than applying a visual style to interchangeable subjects.
 Flag: Projects that feel like design applied TO a subject rather than design emerging FROM understanding the subject.
 
 ### B4. Would a non-designer understand and care?
@@ -112,5 +112,5 @@ For each non-passing question, state:
 ## Called By
 
 - `/audit run` — runs in parallel with other lenses
-- `/steward run` — via audit
+- `/full-pass run` — via audit
 - Standalone — usable anytime

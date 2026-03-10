@@ -73,9 +73,9 @@ Does the full sequence — homepage manifesto → Governance → Infrastructure 
 
 ### 4. The Coherence Through-Line
 
-the site's core claim is "seeing the whole picture and building the structure so coherence holds." Is this visible across pages without being stated on every page?
+Peter's core claim is "seeing the whole picture and building the structure so coherence holds." Is this visible across pages without being stated on every page?
 
-- Can a visitor who reads 5+ pages articulate what ties them together — without spelling it out?
+- Can a visitor who reads 5+ pages articulate what ties them together — without Peter spelling it out?
 - Is the through-line in the structure (how pages connect) or just in the copy (what pages say)?
 - Does the material vocabulary (holds, breaks, drifts, scaffold, fidelity) accumulate meaning across pages, or stay opaque?
 
@@ -130,5 +130,5 @@ For each FRAGMENTED dimension:
 
 ## Called By
 
-- `/steward run` — parallel arm (independent, no data dependencies)
+- `/full-pass run` — parallel arm (independent, no data dependencies)
 - Standalone — usable anytime

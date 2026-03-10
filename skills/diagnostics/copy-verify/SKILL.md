@@ -1,6 +1,6 @@
 ---
 name: copy-verify
-description: "Copy verification checklist — 12-item pass/fail check on draft or published copy. Voice rules, grounding, Shaw check. Read-only diagnostic."
+description: "Copy verification checklist — 13-item pass/fail check on draft or published copy. Voice rules, grounding, Shaw check, steward voice. Read-only diagnostic."
 user_invocable: true
 ---
 
@@ -8,7 +8,7 @@ user_invocable: true
 
 ## Purpose
 
-12-item verification checklist for any copy — draft or published. Catches voice violations, ungrounded claims, missing updates, and Shaw failures. Shared by `/copy edit`, `/copy write`, and `/audit` baseline.
+13-item verification checklist for any copy — draft or published. Catches voice violations, ungrounded claims, missing updates, Shaw failures, and steward voice drift. Shared by `/copy edit`, `/copy write`, and `/audit` baseline.
 
 Read-only diagnostic. Reports pass/fail per item, never auto-fixes.
 
@@ -32,7 +32,7 @@ Read-only diagnostic. Reports pass/fail per item, never auto-fixes.
 - `/grip-test` → stranger test on the same copy → Fingernail/Grip/Lock rating
 
 ### Lens Criteria (embedded)
-The 12-item checklist below IS this skill's criteria.
+The 13-item checklist below IS this skill's criteria.
 
 ## Checklist
 
@@ -48,8 +48,9 @@ Run every item. Report pass/fail with specifics on failures.
 8. [ ] No ungrounded metaphors?
 9. [ ] No personification of tools/methods? ("does the thinking", "holds itself")
 10. [ ] Shaw check: does the copy feel like a room, not a pitch? Do the references and subject matter paint the specific person? If you stripped the name, would this feel wrong on someone else's site?
-11. [ ] Does the frontmatter (context/drift/scaffold/fidelity) match the body?
-12. [ ] Does the `_data/index.json` entry need updating to match?
+11. [ ] Steward voice: does this read like someone explaining it to a person standing next to them, or like internal monologue extracted from a working session? Same vocabulary, same expertise, but the posture is talking, not thinking. The shop steward knows everything the engineer knows — he just tells you like a person.
+12. [ ] Does the frontmatter (context/drift/scaffold/fidelity) match the body?
+13. [ ] Does the `_data/index.json` entry need updating to match?
 
 ## Output
 
@@ -58,7 +59,7 @@ Print in conversation. No file changes. Format:
 ```
 # Copy Verify — [page name]
 
-## Result: [X/12 passed]
+## Result: [X/13 passed]
 
 1. Opener lands: [PASS/FAIL] — [note]
 2. Grip test: [PASS/FAIL] — [Fingernail/Grip/Lock]
@@ -70,13 +71,14 @@ Print in conversation. No file changes. Format:
 8. Ungrounded metaphors: [PASS/FAIL] — [which ones]
 9. Tool personification: [PASS/FAIL] — [instances]
 10. Shaw check: [PASS/FAIL] — [note]
-11. Frontmatter match: [PASS/FAIL] — [mismatches]
-12. Index.json sync: [PASS/FAIL] — [needs update?]
+11. Steward voice: [PASS/FAIL] — [thinking voice vs talking voice]
+12. Frontmatter match: [PASS/FAIL] — [mismatches]
+13. Index.json sync: [PASS/FAIL] — [needs update?]
 ```
 
 ## Complementary Check
 
-`/the-walk` evaluates whether the page's example sequence builds the same room as the homepage. Copy-verify catches voice and grounding issues. The Walk catches positioning issues — a page can pass all 12 items and still build the wrong room if its examples position a secondary identity. When called from `/copy edit` or `/copy review`, The Walk runs alongside copy-verify.
+`/the-walk` evaluates whether the page's example sequence builds the same room as the homepage. Copy-verify catches voice and grounding issues. The Walk catches positioning issues — a page can pass all 13 items and still build the wrong room if its examples position a secondary identity. When called from `/copy edit` or `/copy review`, The Walk runs alongside copy-verify.
 
 ## Called By
 
